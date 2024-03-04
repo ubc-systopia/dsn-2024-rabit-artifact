@@ -1,7 +1,7 @@
 # Running Testbed Workflows
 
 ## Information Regarding Testbed Workflows and Device Commands
-* [Testbed Workflow Steps and List of Device Commands](././docs/testbed_information.pdf)
+* [Testbed Workflow Steps and List of Device Commands](../docs/testbed_information.pdf)
 
 ## Helper python files
 1) `dummy.py`: Defines the classes for the low-fidelity objects of the testbed.
