@@ -11,7 +11,7 @@
 ## Running Workflows
 
 ### Configuration
-1) Download (`interbotix`)[https://github.com/Interbotix] and pass the file path of viperx repository in the `deck.py` file.
+1) Download [`interbotix`](https://github.com/Interbotix) and pass the file path of viperx repository in the `deck.py` file.
 2) Install `pyniryo` python library using the following command line `pip install pyniryo`
 
 ### Dose, Shake, and Heat using One Robot
