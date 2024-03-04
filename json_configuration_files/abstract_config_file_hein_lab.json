@@ -1,0 +1,506 @@
+{
+    "robots": {
+        "arm": {
+            "properties": {
+                "class_name": "UR3Arm",
+                "sleep_pose_coords": {
+                    "x": -136.9,
+                    "y": -267.2,
+                    "z": 147
+                },
+                "location": null
+        },
+        "status": {
+            "get_location": {
+                "command": "location",
+                "response": null
+            },
+            "get_gripper": {
+                "command": null,
+                "response": null
+            }
+        },
+        "actions": {
+            "move_robot": {
+                "command": "move_to_location",
+                "arguments": null
+            },
+            "pick_object": {
+                "command": "close_gripper",
+                "arguments": null
+            },
+            "place_object": {
+                "command": "open_gripper",
+                "arguments": null
+            }
+        }
+    }
+},
+    "dosing_systems": {
+        "quan": {
+            "properties": {
+                "class_name": "ArduinoAugmentedQuantos",
+                "location": {
+                    "arm": {
+                        "min_x": -396.91,
+                        "min_y": -537.55,
+                        "min_z": 66.54,
+                        "max_x": 66.54,
+                        "max_y": -346.14,
+                        "max_z": 495.78
+                    }
+                },
+                "hasDoor": true,
+                "door": "north",
+                "open_end": false
+            },
+            "status": {
+                "get_door_status": {
+                    "command": null,
+                    "response": null
+                },
+                "get_dispense_status": {
+                    "command": null,
+                    "response": null
+                },
+                "get_pump_status": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": "front_door_position",
+                    "arguments": "open"
+                },
+                "close_door": {
+                    "command": "front_door_position",
+                    "arguments": "close"
+                },
+                "start_dispensing": {
+                    "command": "start_dosing",
+                    "arguments": null
+                },
+                "stop_dispensing": {
+                    "command": "home_z_stage",
+                    "arguments": null
+                },
+                "start_pumping": {
+                    "command": null,
+                    "arguments": null
+                },
+                "stop_pumping": {
+                    "command": null,
+                    "arguments": null
+                },
+                "dosing_amount": {
+                    "command": "target_mass",
+                    "arguments": null
+                },
+                "pumping_amount": {
+                    "command": null,
+                    "arguments": null
+                }
+            }
+        },
+        "samplomatic": {
+            "properties": {
+                "class_name": "Samplomatic",
+                "location": {
+                    "arm": {
+                        "min_x": 254.96,
+                        "min_y": 181.71,
+                        "min_z": 16.89,
+                        "max_x": 376.28,
+                        "max_y": 215.00,
+                        "max_z": 180.04
+                    }
+                },
+                "hasDoor": false,
+                "door": null,
+                "open_end": true
+            },
+            "status": {
+                "get_door_status": {
+                    "command": null,
+                    "response": null
+                },
+                "get_dispense_status": {
+                    "command": null,
+                    "response": null
+                },
+                "get_pump_status": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "close_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "start_dispensing": {
+                    "command": "I",
+                    "arguments": null
+                },
+                "stop_dispensing": {
+                    "command": null,
+                    "arguments": null
+                },
+                "start_pumping": {
+                    "command": "P",
+                    "arguments": null
+                },
+                "stop_pumping": {
+                    "command": null,
+                    "arguments": null
+                },
+                "dosing_amount": {
+                    "command": null,
+                    "arguments": null
+                },
+                "pumping_amount": {
+                    "command": null,
+                    "arguments": null
+                }
+            }
+        }
+    },
+    "action_devices": {
+        "ts": {
+            "properties": {
+                "class_name": "Thermoshaker",
+                "location": {
+                    "arm": {
+                        "min_x": -196.16,
+                        "min_y": 306.88,
+                        "min_z": 8.12,
+                        "max_x": 376.28,
+                        "max_y": 514.43,
+                        "max_z": 112.04
+                    }
+                },
+                "maxActionValue": 1000,
+                "hasDoor": false,
+                "door": null,
+                "open_end": true
+            },
+            "status": {
+                "get_action": {
+                    "command": "speed",
+                    "response": "velocity > 0"
+                },
+                "get_door_status": {
+                    "command": null,
+                    "response": null
+                },
+                "get_action_val": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "close_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "start": {
+                    "command": "START_4",
+                    "arguments": null
+                },
+                "stop": {
+                    "command": "STOP_4",
+                    "arguments": null
+                },
+                "change_action_val": {
+                    "command": null,
+                    "arguments": null
+                }
+            }
+        },
+        "relay": {
+            "properties": {
+                "class_name": "RelayBoard",
+                "location": {
+                    "arm": {
+                        "min_x": 245.79,
+                        "min_y": -116.60,
+                        "min_z": 8.12,
+                        "max_x": 385.31,
+                        "max_y": -14.70,
+                        "max_z": 29.01
+                    }
+                },
+                "maxActionValue": 1000,
+                "hasDoor": false,
+                "door": null,
+                "open_end": true
+            },
+            "status": {
+                "get_action": {
+                    "command": "get_output",
+                    "response": null
+                },
+                "get_door_status": {
+                    "command": null,
+                    "response": null
+                },
+                "get_action_val": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "close_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "start": {
+                    "command": "set_output",
+                    "arguments": "port == 4"
+                },
+                "stop": {
+                    "command": "set_output",
+                    "arguments": "port == 4"
+                },
+                "change_action_val": {
+                    "command": null,
+                    "arguments": null
+                }
+            }
+        },
+        "stirrer": {
+            "properties": {
+                "class_name": "MagenticStirrer",
+                "location": {
+                    "EnterNameofRobot": {
+                        "min_x": 151.62,
+                        "min_y": -359.68,
+                        "min_z": 8.47,
+                        "max_x": 403.95,
+                        "max_y": -191.40,
+                        "max_z": 22.58
+                    }
+                },
+                "maxActionValue": 1000,
+                "hasDoor": false,
+                "door": null,
+                "open_end": true
+            },
+            "status": {
+                "get_action": {
+                    "command": "get_output",
+                    "response": null
+                },
+                "get_door_status": {
+                    "command": null,
+                    "response": null
+                },
+                "get_action_val": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "close_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "start": {
+                    "command": "START_1",
+                    "arguments": null
+                },
+                "stop": {
+                    "command": "STOP_1",
+                    "arguments": null
+                },
+                "change_action_val": {
+                    "command": null,
+                    "arguments": null
+                }
+            }
+        }
+    },
+    "containers": {
+        "solution": {
+            "sol": {
+                "properties": {
+                    "class_name": "Container",
+                    "hasStopper": true,
+                    "height": 100,
+                    "maxCapacity": 100
+                },
+                "status": {
+                    "get_stopper_status": {
+                        "command": null,
+                        "response": null
+                    },
+                    "get_container_capacity": {
+                        "command": "default to empty",
+                        "response": null
+                    },
+                    "get_container_location": {
+                        "command": null,
+                        "response": null
+                    }
+                },
+                "actions": {
+                    "move_container": {
+                        "command": null,
+                        "arguments": null
+                    },
+                    "remove_stopper": {
+                        "command": null,
+                        "arguments": null
+                    },
+                    "put_stopper": {
+                        "command": null,
+                        "arguments": null
+                    }
+                }
+            }
+        },
+        "storage": {
+            "sd1_dosing": {
+                "properties": {
+                    "class_name": "ArduinoAugmentedQuantos",
+                    "dosingSystemName": "quan",
+                    "hasStopper": false,
+                    "maxCapacity": 200
+                },
+                "status": {
+                    "get_stopper_status": {
+                        "command": null,
+                        "response": null
+                    },
+                    "get_container_capacity": {
+                        "command": null,
+                        "response": null
+                    }
+                },
+                "actions": {
+                    "remove_stopper": {
+                        "command": null,
+                        "arguments": null
+                    },
+                    "put_stopper": {
+                        "command": null,
+                        "arguments": null
+                    }
+                }
+            },
+            "ld1_dosing": {
+                "properties": {
+                    "class_name": "Samplomatic",
+                    "dosingSystemName": "samplomatic",
+                    "hasStopper": false,
+                    "maxCapacity": 200
+                },
+                "status": {
+                    "get_stopper_status": {
+                        "command": null,
+                        "response": null
+                    },
+                    "get_container_capacity": {
+                        "command": null,
+                        "response": null
+                    }
+                },
+                "actions": {
+                    "remove_stopper": {
+                        "command": null,
+                        "arguments": null
+                    },
+                    "put_stopper": {
+                        "command": null,
+                        "arguments": null
+                    }
+                }
+            }
+        },
+        "carrier": {
+            "ld1_carrier": {
+                "properties": {
+                    "class_name": "Samplomatic",
+                    "dosingSystemName": "samplomatic",
+                    "hasStopperIn": true,
+                    "hasStopperOut": true,
+                    "maxCapacity": 100
+                },
+                "status": {
+                    "get_stopper_in_status": {
+                        "command": null,
+                        "response": null
+                    },
+                    "get_stopper_out_status": {
+                        "command": null,
+                        "response": null
+                    },
+                    "get_container_capacity": {
+                        "command": "default to empty",
+                        "response": null
+                    }
+                },
+                "actions": {
+                    "remove_stopper_in": {
+                        "command": null,
+                        "arguments": null
+                    },
+                    "put_stopper_in": {
+                        "command": null,
+                        "arguments": null
+                    },
+                    "remove_stopper_out": {
+                        "command": null,
+                        "arguments": null
+                    },
+                    "put_stopper_out": {
+                        "command": null,
+                        "arguments": null
+                    }
+                }
+            }
+        }
+    },
+    "misc_objects": {
+        "grid": {
+            "location": {
+                "arm": {
+                    "min_x": 100,
+                    "min_y": 100,
+                    "min_z": 100,
+                    "max_x": 200,
+                    "max_y": 200,
+                    "max_z": 200
+                }
+            },
+            "open_end": true
+        }
+    },
+    "environment_locations": {
+        "ground": {
+            "arm": 10
+        },
+        "ceiling": null,
+        "north_wall": null,
+        "south_wall": null,
+        "east_wall": null,
+        "west_wall": null
+    }
+}

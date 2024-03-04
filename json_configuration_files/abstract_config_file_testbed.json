@@ -1,0 +1,442 @@
+{
+    "robots": {
+        "viperx": {
+            "properties" : {
+                "class_name" : "InterbotixRobotXSCore",
+                "sleep_pose_coords" : {
+                    "x" : 0.14,
+                    "y" : 0.0,
+                    "z" : 0.11
+                },
+                "location" : {
+                    "ned2" : {
+                        "min_x": null, 
+                        "min_y": null, 
+                        "min_z": null, 
+                        "max_x": null, 
+                        "max_y": null, 
+                        "max_z": null
+                        
+                    }
+                }
+
+            },
+            "status": {
+                "get_location": {
+                    "command": "robot_get_cartesian_position",
+                    "response": null
+                },
+                "get_gripper": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "move_robot": {
+                    "command": "robot_write_commands",
+                    "arguments": null
+                },
+                "pick_object": {
+                    "command": "robot_write_joint_command",
+                    "arguments": "joint_name == 'gripper' and command == -250.0"
+                },
+                "place_object": {
+                    "command": "robot_write_joint_command",
+                    "arguments": "joint_name == 'gripper' and command == 250.0"
+                }
+            }
+        },
+        "ned2": {
+            "properties" : {
+                "class_name" : "NiryoRobot",
+                "sleep_pose_coords" : {
+                    "x" : 0.14,
+                    "y" : 0.00,
+                    "z" : 0.17
+                },
+                "location" : {
+                    "viperx" : {
+                        "min_x": 0.4329, 
+                        "min_y": 0.32, 
+                        "min_z": 0.0135, 
+                        "max_x": 0.6547, 
+                        "max_y": 0.6312, 
+                        "max_z": 0.43
+                    }
+                }
+            },
+            "status": {
+                "get_location": {
+                    "command": "pose",
+                    "response": null
+                },
+                "get_gripper": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "move_robot": {
+                    "command": "move_pose",
+                    "arguments": null
+                },
+                "pick_object": {
+                    "command": "close_gripper",
+                    "arguments": null
+                },
+                "place_object": {
+                    "command": "open_gripper",
+                    "arguments": null
+                }
+            }
+        }
+    },
+    "dosing_systems": {
+        "dosing_device": {
+            "properties": {
+                "class_name" : "SimulatedSmartDevice",
+                "location" : {
+                    "viperx" : {
+                        "min_x": 0.05, 
+                        "min_y": 0.42, 
+                        "min_z": 0.0135, 
+                        "max_x": 0.28, 
+                        "max_y": 0.52, 
+                        "max_z": 0.29
+                    },
+                    "ned2": {
+                        "min_x": -0.148, 
+                        "min_y": -0.522, 
+                        "min_z": 0.018, 
+                        "max_x": 0.061, 
+                        "max_y": -0.419, 
+                        "max_z": 0.330
+                    }
+                },    
+                "hasDoor": true,
+                "door": "north",
+                "open_end" : false
+            },
+            "status": {
+                "get_door_status": {
+                    "command": "door_state",
+                    "response": "open"
+                },
+                "get_dispense_status": {
+                    "command": "active",
+                    "response": true
+                },
+                "get_pump_status": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": "set_door",
+                    "arguments": "val == 'open'"
+                },
+                "close_door": {
+                    "command": "set_door",
+                    "arguments": "val == 'closed'"
+                },
+                "start_dispensing": {
+                    "command": "run_action",
+                    "arguments": null
+                },
+                "stop_dispensing": {
+                    "command": "stop_action",
+                    "arguments": null
+                },
+                "start_pumping": {
+                    "command": null,
+                    "arguments": null
+                },
+                "stop_pumping": {
+                    "command": null,
+                    "arguments": null
+                },
+                "dosing_amount" : {
+                    "command": "run_action",
+                    "arguments": "quantity"
+                },
+                "pumping_amount" : {
+                    "command": null,
+                    "arguments": null
+                }
+            }
+        }
+    }
+    ,
+    "action_devices": {
+        "thermoshaker": {
+            "properties": {
+                "class_name" : "DummyThermoshaker",
+                "location" : {
+                    "viperx": {
+                        "min_x": 0.426, 
+                        "min_y": -0.33, 
+                        "min_z": 0.0135, 
+                        "max_x": 0.559, 
+                        "max_y": -0.22, 
+                        "max_z": 0.081
+                    }
+                }, 
+                "maxActionValue" : 500,
+                "hasDoor": false,
+                "door": null,
+                "open_end" : true
+            },
+            "status": {
+                "get_action": {
+                    "command": null,
+                    "response": null
+                },
+                "get_door_status": {
+                    "command": null,
+                    "response": null
+                },
+                "get_action_val": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "close_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "start": {
+                    "command": "start_shaking",
+                    "arguments": null
+                },
+                "stop": {
+                    "command": "stop_shaking",
+                    "arguments": null
+                },
+                "change_action_val" : {
+                    "command": null,
+                    "arguments": null
+                }
+            }
+        },
+        "hotplate" :      {
+            "properties": {
+                "class_name" : "MockMagneticStirrer",
+                "location" : {
+                    "viperx": {
+                        "min_x": 0.51, 
+                        "min_y": 0.09324,
+                        "min_z": 0.0135, 
+                        "max_x": 0.62, 
+                        "max_y": 0.238,
+                        "max_z": 0.10
+                    },
+                    "ned2": {
+                        "min_x": 0.190, 
+                        "min_y": -0.038, 
+                        "min_z": 0.018, 
+                        "max_x": 0.326,
+                        "max_y": 0.078, 
+                        "max_z": 0.128
+                    }
+                }, 
+                "maxActionValue" : 500,
+                "hasDoor": false,
+                "door": null,
+                "open_end" : true
+            },
+            "status": {
+                "get_action": {
+                    "command": "stirring",
+                    "response": true
+                },
+                "get_door_status": {
+                    "command": null,
+                    "response": null
+                },
+                "get_action_val": {
+                    "command": null,
+                    "response": null
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "close_door": {
+                    "command": null,
+                    "arguments": null
+                },
+                "start": {
+                    "command": "start_stirring",
+                    "arguments": null
+                },
+                "stop": {
+                    "command": "stop_stirring",
+                    "arguments": null
+                },
+                "change_action_val" : {
+                    "command": null,
+                    "arguments": null
+                }
+            }
+        }
+    },
+    "containers": {
+        "solution": {
+            "vial": {
+                "properties": {
+                    "class_name" : "Vial",
+                    "hasStopper": false,
+                    "height" : 0.08,
+                    "maxCapacity": 10
+                },
+                "status": {
+                    "get_stopper_status": {
+                        "command": null,
+                        "response": null
+                    },
+                    "get_container_capacity": {
+                        "command": null,
+                        "response": null
+                    },
+                    "get_container_location": {
+                        "command": null,
+                        "response": null
+                    }
+                },
+                "actions": {
+                    "move_container":{
+                        "command": null,
+                        "arguments": null
+                    },
+                    "remove_stopper": {
+                        "command": null,
+                        "arguments": null
+                    },
+                    "put_stopper": {
+                        "command": null,
+                        "arguments": null
+                    }
+                }
+            }
+        },
+        "storage": {
+            "dosing_device_storage": {
+                "properties": {
+                    "class_name" : "SimulatedSmartDevice",
+                    "dosingSystemName" : "dosing_device",
+                    "hasStopper": false,
+                    "maxCapacity": 10
+                },
+                "status": {
+                    "get_stopper_status": {
+                        "command": null,
+                        "response": null
+                    },
+                    "get_container_capacity": {
+                        "command": null,
+                        "response": null
+                    }
+                },
+                "actions": {
+                    "remove_stopper": {
+                        "command": null,
+                        "arguments": null
+                    },
+                    "put_stopper": {
+                        "command": null,
+                        "arguments": null
+                    }
+                }
+            }
+        },
+        "carrier": {
+            "EnterInstanceNameHere": {
+                "properties": {
+                    "class_name" : "EnterClassNameHere",
+                    "dosingSystemName" : "EnterAssociatedDosingInstanceName",
+                    "hasStopperIn": "EnterBooleanValueHere",
+                    "hasStopperOut": "EnterBooleanValueHere",
+                    "maxCapacity": "EnterMaximumCapacity"
+                },
+                "status": {
+                    "get_stopper_in_status": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    },
+                    "get_stopper_out_status": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    },
+                    "get_container_capacity": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    }
+                },
+                "actions": {
+                    "remove_stopper_in": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    },
+                    "put_stopper_in": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    },
+                    "remove_stopper_out": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    },
+                    "put_stopper_out": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    }
+                }
+            }
+        }
+    },
+    "misc_objects" : {
+        "grid" : {
+            "location" : {
+                "viperx": {
+                    "min_x": 0.51, 
+                    "min_y": -0.0066, 
+                    "min_z": 0.0135, 
+                    "max_x": 0.62, 
+                    "max_y": 0.09324,
+                    "max_z": 0.10
+                },
+                "ned2": {
+                    "min_x": 0.326, 
+                    "min_y": -0.038, 
+                    "min_z": 0.018, 
+                    "max_x": 0.483, 
+                    "max_y": 0.078, 
+                    "max_z": 0.128
+                }
+            }, 
+            "open_end" : true
+        }
+    },
+    "environment_locations" : {
+        "ground" : {
+            "viperx" : 0.0135,
+            "ned2" : 0.018
+        },
+        "north_wall" : null,
+        "south_wall" : {
+            "ned2" : 0.321
+        },
+        "east_wall" : null,
+        "west_wall" : {
+            "viperx" : 0.233
+        },
+        "ceiling" : null
+    }
+}

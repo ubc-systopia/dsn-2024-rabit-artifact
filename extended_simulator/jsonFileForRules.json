@@ -1,0 +1,18 @@
+{
+    "predictTime":1,
+    "ipAdd":"192.168.48.128",
+    "speedLimit":20,
+    "accelerationLimit":205,
+    "northWall":99999999,
+    "southWall":-99999999,
+    "eastWall":99999999,
+    "westWall":-99999999,
+    "boxInfo":[
+        [50,420,13.5,230,100,276.5],
+        [426,-330,13.5,133,110,67.5],
+        [510,60,13.5,110,178,86.5],
+        [510,-6.6,13.5,110,66.6,86.5]
+    ],
+    "namesOfObjects": ["1", "2", "3","4","5","6","7","8","9","10","11"] ,
+    "terminateOrNotInCaseOfOverlapping":[1,1,1,1] 
+}
