@@ -1,0 +1,3 @@
+[submodule "tracer/niraapad"]
+	path = tracer/niraapad
+	url = https://github.com/ubc-systopia/niraapad/
