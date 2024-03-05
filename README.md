@@ -13,24 +13,30 @@ This README file documents the directory structure of this project.
 ### Directory Structure
 
 * [`docs`](./docs): Additional documents that contain testbed devices' commands and contain a document listing the questions asked from the participant for user case study.
-* [`extended_simulator`](./extended_simulator): Setting up and running Extended Simulator.
+* [`extended_simulator`](./extended_simulator): Contains files for setting up and running extended simulator along with unsafe test cases used for evaluating RABIT.
 * [`json_configuration_files`](./json_configuration_files): Contains a list of json files for configuring the Hein Lab, testbed, and extended simulator.
-* [`testbed_workflows`](./testbed_workflows): Contains a list of experiment scripts containing the workflows running on the testbed.
+* [`testbed_workflows`](./testbed_workflows): Contains a list of experiment scripts containing the workflows running on the testbed along with unsafe test cases used for evaluating RABIT.
 * [`tracer`](./tracer): A non-intrusive tracing framework that has RABIT added as an extension.
-* [`unsafe_test_cases`](./unsafe_test_cases): Contains a list of unsafe experiment scripts used for evaluating the effectiveness of RABIT.
 
+### Getting Started
+
+#### Running Workflows on Extended Simulator
+* [Setting up Extended Simulator](./extended_simulator/setting_up_simulator/)
+* [Running Workflow](./extended_simulator/simulator_workflow/)
+
+#### Running Workflows on the Testbed
+* Requires a similar testbed to ours for executing the workflows.
+* [Running Workflows](./testbed/test_bed_workflows/)
+
+#### Running RABIT
+* 
 
 ## Contact
 
 ### People
 Zainab Saeed Wattoo : zswattoo@gmail.com
 
-Petal Vitis: petal.vitis@gmail.com
-
-Richard Zhu: richard86593@gmail.com
-
-Arpan Gujarati : arbanbg@gmail.com
-
+This repository is created in collaboration with my co-authors: Petal Vitis, Richard Zhu, Arpan Gujarati, and Margo Setlzer
 
 ### Organization
 University of British Columbia
