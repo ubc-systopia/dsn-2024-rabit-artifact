@@ -36,7 +36,7 @@ This README file documents the directory structure of this project.
 ### People
 Zainab Saeed Wattoo : zswattoo@gmail.com
 
-This repository is created in collaboration with my co-authors: Petal Vitis, Richard Zhu, Arpan Gujarati, and Margo Setlzer
+This repository is created in collaboration with other co-authors: Petal Vitis, Richard Zhu, Arpan Gujarati, and Margo Setlzer
 
 ### Organization
 University of British Columbia
