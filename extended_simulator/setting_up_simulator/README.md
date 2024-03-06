@@ -5,7 +5,7 @@
 
 ### Setting up the Extended Simulator
 
-1) We have copied `python_urx_master' repository from this [github link](https://github.com/SintefManufacturing/python-urx).
+1) We have copied `python_urx_master` repository from this [github link](https://github.com/SintefManufacturing/python-urx).
 2) Configure the `jsonFileForRules.json` file by entering the dimensions of the walls and objects.
 3) Run the UR3 Simulator.
 4) Run the extended simulator on command line using the following command: `python extended_simulator.py`.
