@@ -27,7 +27,7 @@ This repository includes the RABIT tool that is added as an extension to the [ra
 * [Running Workflows](./testbed/test_bed_workflows/)
 
 #### Running RABIT
-* Refer to [README.md](./tracer/niraapad/README.md) `Running RABIT` section.
+* Refer to [README.md](https://github.com/ubc-systopia/niraapad/blob/main/README.md) `Running RABIT` section.
   
 ## Contact
 
