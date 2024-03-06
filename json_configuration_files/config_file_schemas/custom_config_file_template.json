@@ -1,0 +1,41 @@
+{
+    "instances": {
+        "EnterInstanceOneNameHere": {
+            "properties": {
+                "class_name" : "EnterClassNameHere",
+                "EnterPropertyOne": "EnterPropertyValue"
+            },
+            "status": {
+                "EnterStatusOne": {
+                    "command": "EnterCommandHere",
+                    "response": "EnterResponseHere"
+                }
+            },
+            "actions": {
+                "EnterActionOne": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                }
+            }
+        }
+    },
+    
+    "state_transition_table" : [
+        {
+            "preconditions" : "EnterPreconditionsHere",
+            "class_name" : "EnterClassNameHere",
+            "instance" : "EnterInstanceOneNameHere[InstanceNameHere, RobotNameHereifAssociatedOrEmptyString]",
+            "action" : "EnterActionOne",
+            "effect" : "EnterEffectHere"
+        }
+    ],
+    "changes_in_existing_state_transition_table" : [
+        {
+            "preconditions" : "EnterPreconditionsHere",
+            "class_name" : "EnterClassNameHere",
+            "instance" : "EnterInstanceOneNameHere[InstanceNameHere, RobotNameHereifAssociatedOrEmptyString]",
+            "action" : "EnterActionOne",
+            "effect" : "EnterEffectHere"
+        }
+    ]
+}

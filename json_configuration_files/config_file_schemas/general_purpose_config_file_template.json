@@ -1,0 +1,323 @@
+{
+    "robots": {
+        "EnterInstanceNameHere": {
+            "properties" : {
+                "class_name" : "EnterClassNameHere",
+                "sleep_pose_coords" : {
+                    "x" : "EnterXCoordinateHere",
+                    "y" : "EnterYCoordinateHere",
+                    "z" : "EnterZCoordinateHere"
+                },
+                "location" : {
+                    "EnterNameOfOtherRobotsOrNull" : {
+                        "min_x": "EnterMinXCoordinateHere", 
+                        "min_y": "EnterMinYCoordinateHere", 
+                        "min_z": "EnterMinZCoordinateHere", 
+                        "max_x": "EnterMaxXCoordinateHere", 
+                        "max_y": "EnterMaxYCoordinateHere", 
+                        "max_z": "EnterMaxZCoordinateHere"
+                        
+                    }
+                }
+
+            },
+            "status": {
+                "get_location": {
+                    "command": "EnterCommandHere",
+                    "response": "EnterResponseHere"
+                },
+                "get_gripper": {
+                    "command": "EnterCommandHere",
+                    "response": "EnterResponseHere"
+                }
+            },
+            "actions": {
+                "move_robot": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "pick_object": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "place_object": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                }
+            }
+        }
+    },
+    "dosing_systems": {
+        "EnterInstanceNameHere": {
+            "properties": {
+                "class_name" : "EnterClassNameHere",
+                "location" : {
+                    "EnterNameofRobot" : {
+                        "min_x": "EnterMinXCoordinateHere", 
+                        "min_y": "EnterMinYCoordinateHere", 
+                        "min_z": "EnterMinZCoordinateHere", 
+                        "max_x": "EnterMaxXCoordinateHere", 
+                        "max_y": "EnterMaxYCoordinateHere", 
+                        "max_z": "EnterMaxZCoordinateHere"
+                    }
+                },    
+                "hasDoor": "EnterBooleanPropertyHere(true, false)",
+                "door": "EnterDoorLocation(north, south, east, west, null)",
+                "open_end" : "EnterBooleanPropertyHere(true, false)"
+            },
+            "status": {
+                "get_door_status": {
+                    "command": "EnterCommandHere",
+                    "response": "EnterResponseHere"
+                },
+                "get_dispense_status": {
+                    "command": "EnterCommandHere",
+                    "response": "EnterResponseHere"
+                },
+                "get_pump_status": {
+                    "command": "EnterCommandHere",
+                    "response": "EnterResponseHere"
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "close_door": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "start_dispensing": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "stop_dispensing": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "start_pumping": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "stop_pumping": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "dosing_amount" : {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "pumping_amount" : {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                }
+            }
+        }
+    },
+    "action_devices": {
+        "EnterInstanceNameHere": {
+            "properties": {
+                "class_name" : "EnterClassNameHere",
+                "location" : {
+                    "EnterNameofRobot": {
+                        "min_x": "EnterMinXCoordinateHere", 
+                        "min_y": "EnterMinYCoordinateHere", 
+                        "min_z": "EnterMinZCoordinateHere", 
+                        "max_x": "EnterMaxXCoordinateHere", 
+                        "max_y": "EnterMaxYCoordinateHere", 
+                        "max_z": "EnterMaxZCoordinateHere"
+                    }
+                }, 
+                "maxActionValue" : "EnterMaximumActionValue(numeric value)",
+                "hasDoor": "EnterBooleanPropertyHere(true, false)",
+                "door": "EnterDoorLocation(north, south, east, west, null)",
+                "open_end" : "EnterBooleanPropertyHere(true, false)"
+            },
+            "status": {
+                "get_action": {
+                    "command": "EnterCommandHere",
+                    "response": "EnterResponseHere"
+                },
+                "get_door_status": {
+                    "command": "EnterCommandHere",
+                    "response": "EnterResponseHere"
+                },
+                "get_action_val": {
+                    "command": "EnterCommandHere",
+                    "response": "EnterResponseHere"
+                }
+            },
+            "actions": {
+                "open_door": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "close_door": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "start": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "stop": {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                },
+                "change_action_val" : {
+                    "command": "EnterCommandHere",
+                    "arguments": "EnterArgumentsHere"
+                }
+            }
+        }
+    },
+    "containers": {
+        "solution": {
+            "EnterInstanceNameHere": {
+                "properties": {
+                    "class_name" : "EnterClassNameHere",
+                    "hasStopper": "EnterBooleanPropertyHere(true, false)",
+                    "height" : "EnterHeightofVial(numeric value)",
+                    "maxCapacity": "EnterMaximumCapacity(numeric value)"
+                },
+                "status": {
+                    "get_stopper_status": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    },
+                    "get_container_capacity": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    },
+                    "get_container_location": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    }
+                },
+                "actions": {
+                    "move_container":{
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    },
+                    "remove_stopper": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    },
+                    "put_stopper": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    }
+                }
+            }
+        },
+        "storage": {
+            "EnterInstanceNameHere": {
+                "properties": {
+                    "class_name" : "EnterClassNameHere",
+                    "dosingSystemName" : "EnterAssociatedDosingInstanceName",
+                    "hasStopper": "EnterBooleanPropertyHere(true, false)",
+                    "maxCapacity": "EnterMaximumCapacity(numeric value)"
+                },
+                "status": {
+                    "get_stopper_status": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    },
+                    "get_container_capacity": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    }
+                },
+                "actions": {
+                    "remove_stopper": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    },
+                    "put_stopper": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    }
+                }
+            }
+        },
+        "carrier": {
+            "EnterInstanceNameHere": {
+                "properties": {
+                    "class_name" : "EnterClassNameHere",
+                    "dosingSystemName" : "EnterAssociatedDosingInstanceName",
+                    "hasStopperIn": "EnterBooleanValueHere",
+                    "hasStopperOut": "EnterBooleanValueHere",
+                    "maxCapacity": "EnterMaximumCapacity"
+                },
+                "status": {
+                    "get_stopper_in_status": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    },
+                    "get_stopper_out_status": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    },
+                    "get_container_capacity": {
+                        "command": "EnterCommandHere",
+                        "response": "EnterResponseHere"
+                    }
+                },
+                "actions": {
+                    "remove_stopper_in": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    },
+                    "put_stopper_in": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    },
+                    "remove_stopper_out": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    },
+                    "put_stopper_out": {
+                        "command": "EnterCommandHere",
+                        "arguments": "EnterArgumentsHere"
+                    }
+                }
+            }
+        }
+    },
+    "misc_objects" : {
+        "EnterInstanceNameHere" : {
+            "location" : {
+                "EnterNameofRobot" : {
+                    "min_x": "EnterMinXCoordinateHere", 
+                    "min_y": "EnterMinYCoordinateHere", 
+                    "min_z": "EnterMinZCoordinateHere", 
+                    "max_x": "EnterMaxXCoordinateHere", 
+                    "max_y": "EnterMaxYCoordinateHere", 
+                    "max_z": "EnterMaxZCoordinateHere"
+                }
+            }, 
+            "open_end" : "EnterBooleanPropertyHere(true, false)"
+        }
+    },
+    "environment_locations" : {
+        "ground" : {
+            "EnterNameofRobotOrNull" : "EnterMinZValueofPlatformOrNull"
+        },
+        "ceiling" : {
+            "EnterNameofRobotOrNull" : "EnterMaxZValueofPlatformOrNull"
+        },
+        "north_wall" : {
+            "EnterNameofRobotOrNull" : "EnterMinXValueofPlatformOrNull"
+        },
+        "south_wall" : {
+            "EnterNameofRobotOrNull" : "EnterMaxXValueofPlatformOrNull"
+        },
+        "east_wall" : {
+            "EnterNameofRobotOrNull" : "EnterMinYValueofPlatformOrNull"
+        },
+        "west_wall" : {
+            "EnterNameofRobotOrNull" : "EnterMaxYValueofPlatformOrNull"
+        }
+    }
+}
