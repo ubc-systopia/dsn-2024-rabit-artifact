@@ -4,7 +4,7 @@
 
 Self-driving labs are continuously in prototyping mode due to which lab researchers making errors while writing experiment scripts is inevitable. We designed and developed RABIT that helps specify safety rules and ensure safe execution while writing and executing experiment scripts.
 
-This repository includes the RABIT tool that is added as an extension to the [ratracer](https://github.com/ubc-systopia/dsn-2022-rad-artifact) framework that we have added as a submodule in this repository. Additionally, we include the JSON files for specifying the Hein Lab, testbed, and the extended simulator described in our research paper. We also include the unsafe test experiment scripts executed on the testbed for our evaluation.
+This repository includes the RABIT tool that is added as an extension to the [ratracer](https://github.com/ubc-systopia/dsn-2022-rad-artifact) framework that we have added as a submodule in this repository. Additionally, we include the JSON files for specifying the Hein Lab, testbed, and the extended simulator described in our research paper. We also include the unsafe test experiment scripts executed on the testbed and the extended simulator for our evaluation.
 
 This README file documents the directory structure of this project.
 
@@ -30,13 +30,13 @@ This README file documents the directory structure of this project.
 
 #### Running RABIT
 * Refer to [README.md](./tracer/niraapad/README.md) `Running RABIT` section.
-
+  
 ## Contact
 
 ### People
 Zainab Saeed Wattoo : zswattoo@gmail.com
 
-This repository is created in collaboration with other co-authors: Petal Vitis, Richard Zhu, Arpan Gujarati, and Margo Setlzer
+This repository is created in collaboration with other co-authors: Petal Vitis, Richard Zhu, Arpan Gujarati, and Margo Seltzer
 
 ### Organization
 University of British Columbia
