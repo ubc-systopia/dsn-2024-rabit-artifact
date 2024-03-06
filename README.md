@@ -6,8 +6,6 @@ Self-driving labs are continuously in prototyping mode due to which lab research
 
 This repository includes the RABIT tool that is added as an extension to the [ratracer](https://github.com/ubc-systopia/dsn-2022-rad-artifact) framework that we have added as a submodule in this repository. Additionally, we include the JSON files for specifying the Hein Lab, testbed, and the extended simulator described in our research paper. We also include the unsafe test experiment scripts executed on the testbed and the extended simulator for our evaluation.
 
-This README file documents the directory structure of this project.
-
 ## Resources
 
 ### Directory Structure
