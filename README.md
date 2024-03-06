@@ -13,7 +13,7 @@ This repository includes the RABIT tool that is added as an extension to the [ra
 * [`docs`](./docs): Additional documents that contain testbed devices' commands and contain a document listing the questions asked from the participant for user case study.
 * [`extended_simulator`](./extended_simulator): Contains files for setting up and running extended simulator along with unsafe test cases used for evaluating RABIT.
 * [`json_configuration_files`](./json_configuration_files): Contains a list of json files for configuring the Hein Lab, testbed, and extended simulator.
-* [`testbed_workflows`](./testbed_workflows): Contains a list of experiment scripts containing the workflows running on the testbed along with unsafe test cases used for evaluating RABIT.
+* [`testbed`](./testbed): Contains a list of experiment scripts containing the workflows running on the testbed along with unsafe test cases used for evaluating RABIT.
 * [`tracer`](./tracer): A non-intrusive tracing framework that has RABIT added as an extension.
 
 ### Getting Started
